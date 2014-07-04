@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524053EC18C51B1F00A19611 /* OAQueueController.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053EA18C51B1F00A19611 /* OAQueueController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		524053ED18C51B1F00A19611 /* OAQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524053EB18C51B1F00A19611 /* OAQueueController.m */; };
+		524053FB18C53DEF00A19611 /* OAQueueControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053F018C523DB00A19611 /* OAQueueControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525867A918B2C468000E3A15 /* MSWeakTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 525867A718B2C467000E3A15 /* MSWeakTimer.h */; };
+		525867AA18B2C468000E3A15 /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 525867A818B2C468000E3A15 /* MSWeakTimer.m */; };
+		52A76E5A195D0D1E00EB1768 /* SFBAudioEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A76E59195D0D1E00EB1768 /* SFBAudioEngine.framework */; };
+		52ABB70C18A5B7CB0044DBD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ABB70B18A5B7CB0044DBD7 /* Cocoa.framework */; };
+		52ABB71618A5B7CB0044DBD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52ABB71418A5B7CB0044DBD7 /* InfoPlist.strings */; };
+		52ABB71A18A5B7CC0044DBD7 /* ObjectiveAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB71918A5B7CC0044DBD7 /* ObjectiveAudio.m */; };
+		52ABB72118A5B7CC0044DBD7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ABB72018A5B7CC0044DBD7 /* XCTest.framework */; };
+		52ABB72218A5B7CC0044DBD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ABB70B18A5B7CB0044DBD7 /* Cocoa.framework */; };
+		52ABB72518A5B7CC0044DBD7 /* ObjectiveAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ABB70818A5B7CB0044DBD7 /* ObjectiveAudio.framework */; };
+		52ABB72B18A5B7CC0044DBD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52ABB72918A5B7CC0044DBD7 /* InfoPlist.strings */; };
+		52ABB72D18A5B7CC0044DBD7 /* ObjectiveAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB72C18A5B7CC0044DBD7 /* ObjectiveAudioTests.m */; };
+		52ABB74518A5BAC90044DBD7 /* OAAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB74318A5BAC90044DBD7 /* OAAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB74618A5BACA0044DBD7 /* OAAudioPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB74418A5BAC90044DBD7 /* OAAudioPlayer.mm */; };
+		52ABB75518A5C0E10044DBD7 /* ObjectiveAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB71818A5B7CC0044DBD7 /* ObjectiveAudio.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB75F18A5D4070044DBD7 /* OAFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB75D18A5D4070044DBD7 /* OAFileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB76018A5D4070044DBD7 /* OAFileManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB75E18A5D4070044DBD7 /* OAFileManager.mm */; };
+		52ABB76418A5D6250044DBD7 /* OAAudioObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB76218A5D6250044DBD7 /* OAAudioObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB76518A5D6250044DBD7 /* OAAudioObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB76318A5D6250044DBD7 /* OAAudioObject.mm */; };
+		52ABB76A18A5EEE80044DBD7 /* OAAudioPlayerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB76D18A6BA1E0044DBD7 /* OAUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB76B18A6BA1E0044DBD7 /* OAUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52ABB76E18A6BA1E0044DBD7 /* OAUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52ABB72318A5B7CC0044DBD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52ABB6FF18A5B7CB0044DBD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52ABB70718A5B7CB0044DBD7;
+			remoteInfo = ObjectiveAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		524053EA18C51B1F00A19611 /* OAQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAQueueController.h; sourceTree = "<group>"; };
+		524053EB18C51B1F00A19611 /* OAQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAQueueController.m; sourceTree = "<group>"; };
+		524053F018C523DB00A19611 /* OAQueueControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAQueueControllerDelegate.h; sourceTree = "<group>"; };
+		525867A718B2C467000E3A15 /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		525867A818B2C468000E3A15 /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		52A76E59195D0D1E00EB1768 /* SFBAudioEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFBAudioEngine.framework; path = "../../../Library/Developer/Xcode/DerivedData/Juicebox-fmxgnpgwpweipzcpmrcmgtyjezho/Build/Products/Debug/SFBAudioEngine.framework"; sourceTree = "<group>"; };
+		52ABB70818A5B7CB0044DBD7 /* ObjectiveAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectiveAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ABB70B18A5B7CB0044DBD7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		52ABB70E18A5B7CB0044DBD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		52ABB70F18A5B7CB0044DBD7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		52ABB71018A5B7CB0044DBD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		52ABB71318A5B7CB0044DBD7 /* ObjectiveAudio-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveAudio-Info.plist"; sourceTree = "<group>"; };
+		52ABB71518A5B7CB0044DBD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52ABB71718A5B7CB0044DBD7 /* ObjectiveAudio-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveAudio-Prefix.pch"; sourceTree = "<group>"; };
+		52ABB71818A5B7CC0044DBD7 /* ObjectiveAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveAudio.h; sourceTree = "<group>"; };
+		52ABB71918A5B7CC0044DBD7 /* ObjectiveAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveAudio.m; sourceTree = "<group>"; };
+		52ABB71F18A5B7CC0044DBD7 /* ObjectiveAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52ABB72018A5B7CC0044DBD7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		52ABB72818A5B7CC0044DBD7 /* ObjectiveAudioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveAudioTests-Info.plist"; sourceTree = "<group>"; };
+		52ABB72A18A5B7CC0044DBD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		52ABB72C18A5B7CC0044DBD7 /* ObjectiveAudioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveAudioTests.m; sourceTree = "<group>"; };
+		52ABB74318A5BAC90044DBD7 /* OAAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAudioPlayer.h; sourceTree = "<group>"; };
+		52ABB74418A5BAC90044DBD7 /* OAAudioPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OAAudioPlayer.mm; sourceTree = "<group>"; };
+		52ABB75D18A5D4070044DBD7 /* OAFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAFileManager.h; sourceTree = "<group>"; };
+		52ABB75E18A5D4070044DBD7 /* OAFileManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OAFileManager.mm; sourceTree = "<group>"; };
+		52ABB76218A5D6250044DBD7 /* OAAudioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAudioObject.h; sourceTree = "<group>"; };
+		52ABB76318A5D6250044DBD7 /* OAAudioObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OAAudioObject.mm; sourceTree = "<group>"; };
+		52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAudioPlayerDelegate.h; sourceTree = "<group>"; };
+		52ABB76B18A6BA1E0044DBD7 /* OAUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAUtilities.h; sourceTree = "<group>"; };
+		52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52ABB70418A5B7CB0044DBD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A76E5A195D0D1E00EB1768 /* SFBAudioEngine.framework in Frameworks */,
+				52ABB70C18A5B7CB0044DBD7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ABB71C18A5B7CC0044DBD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB72218A5B7CC0044DBD7 /* Cocoa.framework in Frameworks */,
+				52ABB72118A5B7CC0044DBD7 /* XCTest.framework in Frameworks */,
+				52ABB72518A5B7CC0044DBD7 /* ObjectiveAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52ABB6FE18A5B7CB0044DBD7 = {
+			isa = PBXGroup;
+			children = (
+				52ABB71118A5B7CB0044DBD7 /* ObjectiveAudio */,
+				52ABB72618A5B7CC0044DBD7 /* ObjectiveAudioTests */,
+				52ABB70A18A5B7CB0044DBD7 /* Frameworks */,
+				52ABB70918A5B7CB0044DBD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52ABB70918A5B7CB0044DBD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB70818A5B7CB0044DBD7 /* ObjectiveAudio.framework */,
+				52ABB71F18A5B7CC0044DBD7 /* ObjectiveAudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52ABB70A18A5B7CB0044DBD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52A76E59195D0D1E00EB1768 /* SFBAudioEngine.framework */,
+				52ABB70B18A5B7CB0044DBD7 /* Cocoa.framework */,
+				52ABB72018A5B7CC0044DBD7 /* XCTest.framework */,
+				52ABB70D18A5B7CB0044DBD7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52ABB70D18A5B7CB0044DBD7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB70E18A5B7CB0044DBD7 /* Foundation.framework */,
+				52ABB70F18A5B7CB0044DBD7 /* CoreData.framework */,
+				52ABB71018A5B7CB0044DBD7 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		52ABB71118A5B7CB0044DBD7 /* ObjectiveAudio */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB71818A5B7CC0044DBD7 /* ObjectiveAudio.h */,
+				52ABB71918A5B7CC0044DBD7 /* ObjectiveAudio.m */,
+				52ABB76218A5D6250044DBD7 /* OAAudioObject.h */,
+				52ABB76318A5D6250044DBD7 /* OAAudioObject.mm */,
+				52ABB74318A5BAC90044DBD7 /* OAAudioPlayer.h */,
+				52ABB74418A5BAC90044DBD7 /* OAAudioPlayer.mm */,
+				52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */,
+				524053EA18C51B1F00A19611 /* OAQueueController.h */,
+				524053EB18C51B1F00A19611 /* OAQueueController.m */,
+				524053F018C523DB00A19611 /* OAQueueControllerDelegate.h */,
+				52ABB75D18A5D4070044DBD7 /* OAFileManager.h */,
+				52ABB75E18A5D4070044DBD7 /* OAFileManager.mm */,
+				52ABB76B18A6BA1E0044DBD7 /* OAUtilities.h */,
+				52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */,
+				525867A718B2C467000E3A15 /* MSWeakTimer.h */,
+				525867A818B2C468000E3A15 /* MSWeakTimer.m */,
+				52ABB71218A5B7CB0044DBD7 /* Supporting Files */,
+			);
+			path = ObjectiveAudio;
+			sourceTree = "<group>";
+		};
+		52ABB71218A5B7CB0044DBD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB71318A5B7CB0044DBD7 /* ObjectiveAudio-Info.plist */,
+				52ABB71418A5B7CB0044DBD7 /* InfoPlist.strings */,
+				52ABB71718A5B7CB0044DBD7 /* ObjectiveAudio-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52ABB72618A5B7CC0044DBD7 /* ObjectiveAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB72C18A5B7CC0044DBD7 /* ObjectiveAudioTests.m */,
+				52ABB72718A5B7CC0044DBD7 /* Supporting Files */,
+			);
+			path = ObjectiveAudioTests;
+			sourceTree = "<group>";
+		};
+		52ABB72718A5B7CC0044DBD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52ABB72818A5B7CC0044DBD7 /* ObjectiveAudioTests-Info.plist */,
+				52ABB72918A5B7CC0044DBD7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52ABB70518A5B7CB0044DBD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB75518A5C0E10044DBD7 /* ObjectiveAudio.h in Headers */,
+				525867A918B2C468000E3A15 /* MSWeakTimer.h in Headers */,
+				524053EC18C51B1F00A19611 /* OAQueueController.h in Headers */,
+				52ABB76A18A5EEE80044DBD7 /* OAAudioPlayerDelegate.h in Headers */,
+				52ABB75F18A5D4070044DBD7 /* OAFileManager.h in Headers */,
+				524053FB18C53DEF00A19611 /* OAQueueControllerDelegate.h in Headers */,
+				52ABB74518A5BAC90044DBD7 /* OAAudioPlayer.h in Headers */,
+				52ABB76D18A6BA1E0044DBD7 /* OAUtilities.h in Headers */,
+				52ABB76418A5D6250044DBD7 /* OAAudioObject.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52ABB70718A5B7CB0044DBD7 /* ObjectiveAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ABB73018A5B7CC0044DBD7 /* Build configuration list for PBXNativeTarget "ObjectiveAudio" */;
+			buildPhases = (
+				52ABB70318A5B7CB0044DBD7 /* Sources */,
+				52ABB70418A5B7CB0044DBD7 /* Frameworks */,
+				52ABB70518A5B7CB0044DBD7 /* Headers */,
+				52ABB70618A5B7CB0044DBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveAudio;
+			productName = ObjectiveAudio;
+			productReference = 52ABB70818A5B7CB0044DBD7 /* ObjectiveAudio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52ABB71E18A5B7CC0044DBD7 /* ObjectiveAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52ABB73318A5B7CC0044DBD7 /* Build configuration list for PBXNativeTarget "ObjectiveAudioTests" */;
+			buildPhases = (
+				52ABB71B18A5B7CC0044DBD7 /* Sources */,
+				52ABB71C18A5B7CC0044DBD7 /* Frameworks */,
+				52ABB71D18A5B7CC0044DBD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52ABB72418A5B7CC0044DBD7 /* PBXTargetDependency */,
+			);
+			name = ObjectiveAudioTests;
+			productName = ObjectiveAudioTests;
+			productReference = 52ABB71F18A5B7CC0044DBD7 /* ObjectiveAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52ABB6FF18A5B7CB0044DBD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "John Wells";
+				TargetAttributes = {
+					52ABB71E18A5B7CC0044DBD7 = {
+						TestTargetID = 52ABB70718A5B7CB0044DBD7;
+					};
+				};
+			};
+			buildConfigurationList = 52ABB70218A5B7CB0044DBD7 /* Build configuration list for PBXProject "ObjectiveAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52ABB6FE18A5B7CB0044DBD7;
+			productRefGroup = 52ABB70918A5B7CB0044DBD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52ABB70718A5B7CB0044DBD7 /* ObjectiveAudio */,
+				52ABB71E18A5B7CC0044DBD7 /* ObjectiveAudioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52ABB70618A5B7CB0044DBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB71618A5B7CB0044DBD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ABB71D18A5B7CC0044DBD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB72B18A5B7CC0044DBD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52ABB70318A5B7CB0044DBD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB76518A5D6250044DBD7 /* OAAudioObject.mm in Sources */,
+				525867AA18B2C468000E3A15 /* MSWeakTimer.m in Sources */,
+				52ABB71A18A5B7CC0044DBD7 /* ObjectiveAudio.m in Sources */,
+				52ABB74618A5BACA0044DBD7 /* OAAudioPlayer.mm in Sources */,
+				52ABB76018A5D4070044DBD7 /* OAFileManager.mm in Sources */,
+				52ABB76E18A6BA1E0044DBD7 /* OAUtilities.m in Sources */,
+				524053ED18C51B1F00A19611 /* OAQueueController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52ABB71B18A5B7CC0044DBD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABB72D18A5B7CC0044DBD7 /* ObjectiveAudioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52ABB72418A5B7CC0044DBD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52ABB70718A5B7CB0044DBD7 /* ObjectiveAudio */;
+			targetProxy = 52ABB72318A5B7CC0044DBD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52ABB71418A5B7CB0044DBD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ABB71518A5B7CB0044DBD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		52ABB72918A5B7CC0044DBD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52ABB72A18A5B7CC0044DBD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52ABB72E18A5B7CC0044DBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52ABB72F18A5B7CC0044DBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52ABB73118A5B7CC0044DBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Juicebox-fmxgnpgwpweipzcpmrcmgtyjezho/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveAudio/ObjectiveAudio-Prefix.pch";
+				INFOPLIST_FILE = "ObjectiveAudio/ObjectiveAudio-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		52ABB73218A5B7CC0044DBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Juicebox-fmxgnpgwpweipzcpmrcmgtyjezho/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveAudio/ObjectiveAudio-Prefix.pch";
+				INFOPLIST_FILE = "ObjectiveAudio/ObjectiveAudio-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		52ABB73418A5B7CC0044DBD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjectiveAudio.framework/Versions/A/ObjectiveAudio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveAudio/ObjectiveAudio-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ObjectiveAudioTests/ObjectiveAudioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		52ABB73518A5B7CC0044DBD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ObjectiveAudio.framework/Versions/A/ObjectiveAudio";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveAudio/ObjectiveAudio-Prefix.pch";
+				INFOPLIST_FILE = "ObjectiveAudioTests/ObjectiveAudioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52ABB70218A5B7CB0044DBD7 /* Build configuration list for PBXProject "ObjectiveAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ABB72E18A5B7CC0044DBD7 /* Debug */,
+				52ABB72F18A5B7CC0044DBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ABB73018A5B7CC0044DBD7 /* Build configuration list for PBXNativeTarget "ObjectiveAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ABB73118A5B7CC0044DBD7 /* Debug */,
+				52ABB73218A5B7CC0044DBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52ABB73318A5B7CC0044DBD7 /* Build configuration list for PBXNativeTarget "ObjectiveAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52ABB73418A5B7CC0044DBD7 /* Debug */,
+				52ABB73518A5B7CC0044DBD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52ABB6FF18A5B7CB0044DBD7 /* Project object */;
+}
