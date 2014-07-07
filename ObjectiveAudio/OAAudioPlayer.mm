@@ -19,6 +19,8 @@ enum ePlayerFlags : unsigned int {
     ePlayerFlagRenderingFinished		= 1u << 1
 };
 
+static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
+
 @interface OAAudioPlayer (Callbacks)
 - (void)updateTimerFired:(MSWeakTimer *)timer;
 @end
@@ -53,7 +55,7 @@ enum ePlayerFlags : unsigned int {
         
         _updateTimer = [MSWeakTimer scheduledTimerWithTimeInterval:(1.0 /5) target:self selector:@selector(updateTimerFired:) userInfo:nil repeats:YES dispatchQueue:dispatch_get_main_queue()];
         
-        _nextObjectQueueThreshold = 1.5;
+        _nextObjectQueueThreshold = DefaultNextObjectQueueThreshold;
         
         SFB::Audio::Decoder::SetAutomaticallyOpenDecoders(YES);
         
@@ -90,7 +92,8 @@ enum ePlayerFlags : unsigned int {
             return NO;
         }
         
-        [self.queueController setCurrentObject:object];
+        self.queueController.currentObject = object;
+        self.queueController.nextObject = nil;
         _player->Play(song);
         return YES;
     }
@@ -294,6 +297,16 @@ enum ePlayerFlags : unsigned int {
 	}
 }
 
++(NSSet *)keyPathsForValuesAffectingElapsedTimeStringValue
+{
+    return [NSSet setWithObject:@"currentPosition"];
+}
+
++(NSSet *)keyPathsForValuesAffectingRemainingTimeStringValue
+{
+    return [NSSet setWithObject:@"currentPosition"];
+}
+
 -(float)volume
 {
     float volume;
@@ -389,10 +402,13 @@ enum ePlayerFlags : unsigned int {
 	}
     
     if (self.playerState == OAPlayerStatePlaying) {
+        [self willChangeValueForKey:@"currentPosition"];
         if ([self.delegate respondsToSelector:@selector(audioPlayerPositionDidChange:)]) {
             [self.delegate audioPlayerPositionDidChange:self];
         }
-        if (self.nextObjectHasBeenQueued == NO && self.remainingTime <= self.nextObjectQueueThreshold) {
+        [self didChangeValueForKey:@"currentPosition"];
+        
+        if (self.remainingTime <= self.nextObjectQueueThreshold && self.nextObjectHasBeenQueued == NO) {
             [self queueNextSong];
             self.nextObjectHasBeenQueued = YES;
         }
