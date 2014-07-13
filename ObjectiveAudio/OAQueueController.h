@@ -16,5 +16,8 @@
 @property (nonatomic) OAAudioObject *currentObject;
 @property (nonatomic) OAAudioObject *nextObject;
 @property (nonatomic) BOOL loadingNext;
+@property (nonatomic) OAAudioObject *previousObject;
+@property (nonatomic) BOOL loadingPrevious;
+
 
 @end

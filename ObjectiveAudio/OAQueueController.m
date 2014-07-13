@@ -44,4 +44,30 @@
     return nil;
 }
 
+-(OAAudioObject *)previousObject
+{
+    [self willChangeValueForKey:@"previousObject"];
+    if (_previousObject == _currentObject || _previousObject == nil) {
+        _previousObject = [self loadPreviousObject];
+    }
+    [self didChangeValueForKey:@"previousObject"];
+    
+    return _previousObject;
+}
+
+-(OAAudioObject *)loadPreviousObject
+{
+    if (!self.loadingPrevious) {
+        OAAudioObject       *previousObject;
+        OAQueueController   *queueController = self;
+        id                   delegate        = self.delegate;
+        
+        previousObject = [delegate queueControllerWillEnqueuePreviousObject:queueController];
+        
+        return previousObject;
+    }
+    
+    return nil;
+}
+
 @end

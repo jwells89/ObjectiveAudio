@@ -92,7 +92,7 @@ typedef enum OAPlayerState : NSInteger {
  
  [audioPlayer setNextObjectQueueThreshold: 5.0];
  @endcode
- @return Amount of remaining time in seconds at which point the player should attempt to queue the song returned by delegate methods \c audioPlayerWillQueueNextObject or \c audioPlayerWillQueueNextURL. Default value is \c 5.0.
+ @return Amount of remaining time in seconds at which point the player should attempt to queue the song returned by delegate methods \c audioPlayerWillQueueNextObject or \c audioPlayerWillQueueNextURL. Default value is \c 1.5.
  */
 @property float nextObjectQueueThreshold;
 
@@ -107,6 +107,7 @@ typedef enum OAPlayerState : NSInteger {
 - (NSInteger)pause;
 - (NSInteger)stop;
 - (NSInteger)playPause;
+- (BOOL)skipToPreviousTrack;
 - (BOOL)skipToNextTrack;
 - (IBAction)playPause:(id)sender;
 - (BOOL)queueObject:(OAAudioObject *)object;
@@ -116,6 +117,7 @@ typedef enum OAPlayerState : NSInteger {
 // IBActions
 - (IBAction)maxVolume:(id)sender;
 - (IBAction)muteVolume:(id)sender;
+- (IBAction)skipToPreviousTrack:(id)sender;
 - (IBAction)skipToNextTrack:(id)sender;
 - (IBAction)setVolumeFromSender:(id)sender;
 - (IBAction)setPositionFromSender:(id)sender;

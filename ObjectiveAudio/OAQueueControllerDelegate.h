@@ -14,5 +14,6 @@
 - (void)queueControllerCurrentSongDidChange:(id)queueController;
 - (NSURL *)queueControllerWillEnqueueNextURL:(id)queueController;
 - (OAAudioObject *)queueControllerWillEnqueueNextObject:(id)queueController;
+- (OAAudioObject *)queueControllerWillEnqueuePreviousObject:(id)queueController;
 
 @end

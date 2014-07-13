@@ -15,7 +15,5 @@
 - (void)audioPlayerStateDidChange:(id)player;
 - (void)audioPlayerVolumeDidChange:(id)player;
 - (void)audioPlayerPositionDidChange:(id)player;
-- (NSURL *)audioPlayerWillQueueNextURL:(id)player;
-- (OAAudioObject *)audioPlayerWillQueueNextObject:(id)player;
 
 @end

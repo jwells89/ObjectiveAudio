@@ -160,6 +160,20 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
     [self playPause];
 }
 
+-(BOOL)skipToPreviousTrack
+{
+    if ([self playObject:[self.queueController previousObject]]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+-(void)skipToPreviousTrack:(id)sender
+{
+    [self skipToPreviousTrack];
+}
+
 -(BOOL)skipToNextTrack
 {
     if ([self queueNextSong]) {
