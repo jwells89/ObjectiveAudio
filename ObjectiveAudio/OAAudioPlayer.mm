@@ -193,7 +193,7 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
             return NO;
         }
         
-        [self.queueController setCurrentObject:object];
+     //   [self.queueController setCurrentObject:object];
         _player->Enqueue(song);
         return YES;
     }
@@ -389,6 +389,9 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
 		_playerFlags.fetch_and(~ePlayerFlagRenderingStarted);
         if ([self.delegate respondsToSelector:@selector(audioPlayerStateDidChange:)]) {
             [self.delegate audioPlayerStateDidChange:self];
+        }
+        if ([self.queueController nextObject].fileURL == self.playingURL) {
+            [self.queueController setCurrentObject:[self.queueController nextObject]];
         }
         if ([self.delegate respondsToSelector:@selector(audioPlayerSongDidChange:)]) {
             [self.delegate audioPlayerSongDidChange:self];

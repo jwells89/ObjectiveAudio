@@ -39,7 +39,8 @@
             //audioObject.albumArt = [[NSImage alloc] initWithData:metadata.frontCoverArtData];
         });
         
-        [[OAArtworkManager sharedArtworkManager] findOrCreateCoverArtworkForObject:audioObject image:metadata.frontCoverArtData];
+        [[OAArtworkManager sharedArtworkManager] findOrCreateCoverArtworkForObject:audioObject
+                                                                         imageData:metadata.frontCoverArtData];
     }];
     
     [self.importQueue addOperation:metadataImportOperation];

@@ -54,7 +54,8 @@
     // Calculate compositing rectangles
     NSRect sourceRect;
     if (cropping) {
-        float destX, destY;
+        float destX = 0;
+        float destY = 0;
         if (resizeMethod == MGImageResizeCrop) {
             // Crop center
             destX = round((scaledWidth - targetWidth) / 2.0);

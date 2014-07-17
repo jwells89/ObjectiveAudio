@@ -17,6 +17,6 @@
 @property (nonatomic) NSSize maxArtSize;
 
 +(OAArtworkManager *)sharedArtworkManager;
--(void)findOrCreateCoverArtworkForObject:(OAAudioObject *)audioObject image:(NSData *)artworkData;
+-(void)findOrCreateCoverArtworkForObject:(OAAudioObject *)audioObject imageData:(NSData *)artworkData;
 
 @end

@@ -14,7 +14,6 @@
 {
     [self willChangeValueForKey:@"currentObject"];
     _currentObject = currentObject;
-   // [self.delegate queueControllerCurrentSongDidChange:self];
     [self didChangeValueForKey:@"currentObject"];
 }
 

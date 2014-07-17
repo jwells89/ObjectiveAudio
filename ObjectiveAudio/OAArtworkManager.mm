@@ -34,7 +34,7 @@
     scaleArt = YES;
 }
 
--(void)findOrCreateCoverArtworkForObject:(OAAudioObject *)audioObject image:(NSData *)artworkData;
+-(void)findOrCreateCoverArtworkForObject:(OAAudioObject *)audioObject imageData:(NSData *)artworkData;
 {
     OAArtworkManager *sharedManager = [OAArtworkManager sharedArtworkManager];
     

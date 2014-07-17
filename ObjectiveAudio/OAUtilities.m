@@ -17,7 +17,7 @@
     NSUInteger s = seconds % 60;
     
     return h ? [NSString stringWithFormat:@"%02lu:%02lu:%02lu", (unsigned long)h, (unsigned long)m, (unsigned long)s]
-    : [NSString stringWithFormat:@"00:%02lu:%02lu", (unsigned long)m, (unsigned long)s];
+    : [NSString stringWithFormat:@"%02lu:%02lu", (unsigned long)m, (unsigned long)s];
 }
 
 @end
