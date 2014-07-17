@@ -176,11 +176,7 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
 
 -(BOOL)skipToNextTrack
 {
-    if ([self queueNextSong]) {
-        return _player->SkipToNextTrack();
-    }
-    
-    return NO;
+    return [self playObject:[self.queueController nextObject]];
 }
 
 -(void)skipToNextTrack:(id)sender
@@ -304,11 +300,7 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
 
 -(void)setCurrentPosition:(double)currentPosition
 {
-    SInt64 totalFrames;
-	if(_player->GetTotalFrames(totalFrames)) {
-		SInt64 desiredFrame = static_cast<SInt64>(currentPosition * totalFrames);
-		_player->SeekToFrame(desiredFrame);
-	}
+    _player->SeekToPosition(currentPosition);
 }
 
 +(NSSet *)keyPathsForValuesAffectingElapsedTimeStringValue

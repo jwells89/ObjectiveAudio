@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OAArtworkImage.h"
 
 @interface OAAudioObject : NSObject
 
@@ -16,8 +17,9 @@
 @property (nonatomic) NSString *artist;
 @property (nonatomic) NSString *albumTitle;
 @property (nonatomic) NSString *albumArtist;
-@property (nonatomic) NSImage *albumArt;
+@property (nonatomic, assign) OAArtworkImage *albumArt;
 @property (nonatomic) NSInteger trackLength;
+@property (nonatomic) NSError *readError;
 
 @property BOOL isInitialized;
 @property BOOL reading;
@@ -25,6 +27,5 @@
 @property BOOL unreadable;
 
 - (id)initWithURL:(NSURL *)url;
-- (BOOL)initialize;
 
 @end

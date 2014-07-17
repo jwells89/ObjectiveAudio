@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52311ED4197335E200AB477F /* OAArtworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311ED2197335E200AB477F /* OAArtworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52311ED5197335E200AB477F /* OAArtworkManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52311ED3197335E200AB477F /* OAArtworkManager.mm */; };
+		52311EEA19777CEB00AB477F /* OAAudioMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EE819777CEB00AB477F /* OAAudioMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52311EEB19777CEB00AB477F /* OAAudioMetadata.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52311EE919777CEB00AB477F /* OAAudioMetadata.mm */; };
+		52311EEF197789C700AB477F /* OAAudioImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EED197789C700AB477F /* OAAudioImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52311EF0197789C700AB477F /* OAAudioImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EEE197789C700AB477F /* OAAudioImporter.m */; };
+		52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EF119782FDB00AB477F /* OAArtworkImage.h */; };
+		52311EF419782FDB00AB477F /* OAArtworkImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EF219782FDB00AB477F /* OAArtworkImage.m */; };
+		52311EFC1978507F00AB477F /* NSImage+MNTImageExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EFA1978507F00AB477F /* NSImage+MNTImageExtensions.h */; };
+		52311EFD1978507F00AB477F /* NSImage+MNTImageExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EFB1978507F00AB477F /* NSImage+MNTImageExtensions.m */; };
 		524053EC18C51B1F00A19611 /* OAQueueController.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053EA18C51B1F00A19611 /* OAQueueController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		524053ED18C51B1F00A19611 /* OAQueueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 524053EB18C51B1F00A19611 /* OAQueueController.m */; };
 		524053FB18C53DEF00A19611 /* OAQueueControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 524053F018C523DB00A19611 /* OAQueueControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52311ED2197335E200AB477F /* OAArtworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAArtworkManager.h; sourceTree = "<group>"; };
+		52311ED3197335E200AB477F /* OAArtworkManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OAArtworkManager.mm; sourceTree = "<group>"; };
+		52311EE819777CEB00AB477F /* OAAudioMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAudioMetadata.h; sourceTree = "<group>"; };
+		52311EE919777CEB00AB477F /* OAAudioMetadata.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OAAudioMetadata.mm; sourceTree = "<group>"; };
+		52311EED197789C700AB477F /* OAAudioImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAudioImporter.h; sourceTree = "<group>"; };
+		52311EEE197789C700AB477F /* OAAudioImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAudioImporter.m; sourceTree = "<group>"; };
+		52311EF119782FDB00AB477F /* OAArtworkImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAArtworkImage.h; sourceTree = "<group>"; };
+		52311EF219782FDB00AB477F /* OAArtworkImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAArtworkImage.m; sourceTree = "<group>"; };
+		52311EFA1978507F00AB477F /* NSImage+MNTImageExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+MNTImageExtensions.h"; sourceTree = "<group>"; };
+		52311EFB1978507F00AB477F /* NSImage+MNTImageExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+MNTImageExtensions.m"; sourceTree = "<group>"; };
 		524053EA18C51B1F00A19611 /* OAQueueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAQueueController.h; sourceTree = "<group>"; };
 		524053EB18C51B1F00A19611 /* OAQueueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAQueueController.m; sourceTree = "<group>"; };
 		524053F018C523DB00A19611 /* OAQueueControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAQueueControllerDelegate.h; sourceTree = "<group>"; };
@@ -144,8 +164,16 @@
 			children = (
 				52ABB71818A5B7CC0044DBD7 /* ObjectiveAudio.h */,
 				52ABB71918A5B7CC0044DBD7 /* ObjectiveAudio.m */,
+				52311EF119782FDB00AB477F /* OAArtworkImage.h */,
+				52311EF219782FDB00AB477F /* OAArtworkImage.m */,
+				52311ED2197335E200AB477F /* OAArtworkManager.h */,
+				52311ED3197335E200AB477F /* OAArtworkManager.mm */,
+				52311EE819777CEB00AB477F /* OAAudioMetadata.h */,
+				52311EE919777CEB00AB477F /* OAAudioMetadata.mm */,
 				52ABB76218A5D6250044DBD7 /* OAAudioObject.h */,
 				52ABB76318A5D6250044DBD7 /* OAAudioObject.mm */,
+				52311EED197789C700AB477F /* OAAudioImporter.h */,
+				52311EEE197789C700AB477F /* OAAudioImporter.m */,
 				52ABB74318A5BAC90044DBD7 /* OAAudioPlayer.h */,
 				52ABB74418A5BAC90044DBD7 /* OAAudioPlayer.mm */,
 				52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */,
@@ -158,6 +186,8 @@
 				52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */,
 				525867A718B2C467000E3A15 /* MSWeakTimer.h */,
 				525867A818B2C468000E3A15 /* MSWeakTimer.m */,
+				52311EFA1978507F00AB477F /* NSImage+MNTImageExtensions.h */,
+				52311EFB1978507F00AB477F /* NSImage+MNTImageExtensions.m */,
 				52ABB71218A5B7CB0044DBD7 /* Supporting Files */,
 			);
 			path = ObjectiveAudio;
@@ -200,10 +230,15 @@
 			files = (
 				52ABB75518A5C0E10044DBD7 /* ObjectiveAudio.h in Headers */,
 				525867A918B2C468000E3A15 /* MSWeakTimer.h in Headers */,
+				52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */,
 				524053EC18C51B1F00A19611 /* OAQueueController.h in Headers */,
 				52ABB76A18A5EEE80044DBD7 /* OAAudioPlayerDelegate.h in Headers */,
 				52ABB75F18A5D4070044DBD7 /* OAFileManager.h in Headers */,
+				52311EEA19777CEB00AB477F /* OAAudioMetadata.h in Headers */,
 				524053FB18C53DEF00A19611 /* OAQueueControllerDelegate.h in Headers */,
+				52311ED4197335E200AB477F /* OAArtworkManager.h in Headers */,
+				52311EFC1978507F00AB477F /* NSImage+MNTImageExtensions.h in Headers */,
+				52311EEF197789C700AB477F /* OAAudioImporter.h in Headers */,
 				52ABB74518A5BAC90044DBD7 /* OAAudioPlayer.h in Headers */,
 				52ABB76D18A6BA1E0044DBD7 /* OAUtilities.h in Headers */,
 				52ABB76418A5D6250044DBD7 /* OAAudioObject.h in Headers */,
@@ -305,10 +340,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52311EF0197789C700AB477F /* OAAudioImporter.m in Sources */,
 				52ABB76518A5D6250044DBD7 /* OAAudioObject.mm in Sources */,
 				525867AA18B2C468000E3A15 /* MSWeakTimer.m in Sources */,
+				52311ED5197335E200AB477F /* OAArtworkManager.mm in Sources */,
 				52ABB71A18A5B7CC0044DBD7 /* ObjectiveAudio.m in Sources */,
 				52ABB74618A5BACA0044DBD7 /* OAAudioPlayer.mm in Sources */,
+				52311EF419782FDB00AB477F /* OAArtworkImage.m in Sources */,
+				52311EEB19777CEB00AB477F /* OAAudioMetadata.mm in Sources */,
+				52311EFD1978507F00AB477F /* NSImage+MNTImageExtensions.m in Sources */,
 				52ABB76018A5D4070044DBD7 /* OAFileManager.mm in Sources */,
 				52ABB76E18A6BA1E0044DBD7 /* OAUtilities.m in Sources */,
 				524053ED18C51B1F00A19611 /* OAQueueController.m in Sources */,
