@@ -17,6 +17,9 @@
 -(instancetype)initWithFileAtURL:(NSURL *)fileURL
 {
     if ((self = [super init])) {
+        if (!fileURL) {
+            return nil;
+        }
         _metadata = SFB::Audio::Metadata::CreateMetadataForURL((__bridge CFURLRef)fileURL);
         if (_metadata == NULL) {
             return nil;

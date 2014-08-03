@@ -94,6 +94,7 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
         
         self.queueController.currentObject = object;
         self.queueController.nextObject = nil;
+        self.queueController.previousObject = nil;
         _player->Play(song);
         return YES;
     }
@@ -390,6 +391,9 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
         if ([self.delegate respondsToSelector:@selector(audioPlayerStateDidChange:)]) {
             [self.delegate audioPlayerStateDidChange:self];
         }
+        if ([self.delegate respondsToSelector:@selector(audioPlayerSongWillChange:)]) {
+            [self.delegate audioPlayerSongWillChange:self];
+        }
         if ([self.queueController nextObject].fileURL == self.playingURL) {
             [self.queueController setCurrentObject:[self.queueController nextObject]];
         }
@@ -406,7 +410,6 @@ static NSInteger const DefaultNextObjectQueueThreshold = 1.5;
         if ([self.delegate respondsToSelector:@selector(audioPlayerStateDidChange:)]) {
             [self.delegate audioPlayerStateDidChange:self];
             }
-        
 		return;
 	}
     

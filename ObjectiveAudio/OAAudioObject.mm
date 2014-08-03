@@ -19,6 +19,46 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [self init];
+    if (self) {
+        self.fileURL = [coder decodeObjectForKey:@"fileURL"];
+        self.title = [coder decodeObjectForKey:@"title"];
+        self.artist = [coder decodeObjectForKey:@"artist"];
+        self.albumTitle = [coder decodeObjectForKey:@"albumTitle"];
+        self.albumArtist = [coder decodeObjectForKey:@"albumArtist"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.fileURL forKey:@"fileURL"];
+    [aCoder encodeObject:self.title forKey:@"title"];
+    [aCoder encodeObject:self.artist forKey:@"artist"];
+    [aCoder encodeObject:self.albumTitle forKey:@"albumTitle"];
+    [aCoder encodeObject:self.albumArtist forKey:@"albumArtist"];
+}
+
+-(void)setTitle:(NSString *)title
+{
+    _title = title;
+    [self.delegate audioObject:self didChangeKey:@"title"];
+}
+
+-(void)setArtist:(NSString *)artist
+{
+    _artist = artist;
+    [self.delegate audioObject:self didChangeKey:@"artist"];
+}
+
+-(void)setAlbumTitle:(NSString *)albumTitle
+{
+    _albumTitle = albumTitle;
+    [self.delegate audioObject:self didChangeKey:@"albumTitle"];
+}
+
 -(NSInteger)trackLength
 {
   /*

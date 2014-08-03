@@ -11,6 +11,7 @@
 @protocol OAAudioPlayerDelegate <NSObject>
 
 @optional
+- (void)audioPlayerSongWillChange:(id)player;
 - (void)audioPlayerSongDidChange:(id)player;
 - (void)audioPlayerStateDidChange:(id)player;
 - (void)audioPlayerVolumeDidChange:(id)player;

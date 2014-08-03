@@ -10,6 +10,24 @@
 
 @implementation OAArtworkImage
 
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [self init];
+    if (self) {
+        self.artwork = [coder decodeObjectForKey:@"artwork"];
+        self.albumTitle = [coder decodeObjectForKey:@"albumTitle"];
+        self.artist = [coder decodeObjectForKey:@"artist"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.artwork forKey:@"artwork"];
+    [aCoder encodeObject:self.albumTitle forKey:@"albumTitle"];
+    [aCoder encodeObject:self.artist forKey:@"artist"];
+}
+
 +(instancetype)artworkWithImage:(NSImage *)image albumTitle:(NSString *)albumTitle artist:(NSString *)artist
 {
     OAArtworkImage *newArt = [[OAArtworkImage alloc] init];

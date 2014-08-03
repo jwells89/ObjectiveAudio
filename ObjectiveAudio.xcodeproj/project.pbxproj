@@ -13,7 +13,7 @@
 		52311EEB19777CEB00AB477F /* OAAudioMetadata.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52311EE919777CEB00AB477F /* OAAudioMetadata.mm */; };
 		52311EEF197789C700AB477F /* OAAudioImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EED197789C700AB477F /* OAAudioImporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52311EF0197789C700AB477F /* OAAudioImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EEE197789C700AB477F /* OAAudioImporter.m */; };
-		52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EF119782FDB00AB477F /* OAArtworkImage.h */; };
+		52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EF119782FDB00AB477F /* OAArtworkImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52311EF419782FDB00AB477F /* OAArtworkImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EF219782FDB00AB477F /* OAArtworkImage.m */; };
 		52311EFC1978507F00AB477F /* NSImage+MNTImageExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 52311EFA1978507F00AB477F /* NSImage+MNTImageExtensions.h */; };
 		52311EFD1978507F00AB477F /* NSImage+MNTImageExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 52311EFB1978507F00AB477F /* NSImage+MNTImageExtensions.m */; };
@@ -41,6 +41,7 @@
 		52ABB76A18A5EEE80044DBD7 /* OAAudioPlayerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52ABB76D18A6BA1E0044DBD7 /* OAUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ABB76B18A6BA1E0044DBD7 /* OAUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52ABB76E18A6BA1E0044DBD7 /* OAUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */; };
+		52C6EB78198AC91B003E3D38 /* OAAudioObjectDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C6EB77198AC7B6003E3D38 /* OAAudioObjectDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		52ABB76918A5EED50044DBD7 /* OAAudioPlayerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAudioPlayerDelegate.h; sourceTree = "<group>"; };
 		52ABB76B18A6BA1E0044DBD7 /* OAUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAUtilities.h; sourceTree = "<group>"; };
 		52ABB76C18A6BA1E0044DBD7 /* OAUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAUtilities.m; sourceTree = "<group>"; };
+		52C6EB77198AC7B6003E3D38 /* OAAudioObjectDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAudioObjectDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				52311EE919777CEB00AB477F /* OAAudioMetadata.mm */,
 				52ABB76218A5D6250044DBD7 /* OAAudioObject.h */,
 				52ABB76318A5D6250044DBD7 /* OAAudioObject.mm */,
+				52C6EB77198AC7B6003E3D38 /* OAAudioObjectDelegate.h */,
 				52311EED197789C700AB477F /* OAAudioImporter.h */,
 				52311EEE197789C700AB477F /* OAAudioImporter.m */,
 				52ABB74318A5BAC90044DBD7 /* OAAudioPlayer.h */,
@@ -230,7 +233,6 @@
 			files = (
 				52ABB75518A5C0E10044DBD7 /* ObjectiveAudio.h in Headers */,
 				525867A918B2C468000E3A15 /* MSWeakTimer.h in Headers */,
-				52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */,
 				524053EC18C51B1F00A19611 /* OAQueueController.h in Headers */,
 				52ABB76A18A5EEE80044DBD7 /* OAAudioPlayerDelegate.h in Headers */,
 				52ABB75F18A5D4070044DBD7 /* OAFileManager.h in Headers */,
@@ -238,8 +240,10 @@
 				524053FB18C53DEF00A19611 /* OAQueueControllerDelegate.h in Headers */,
 				52311ED4197335E200AB477F /* OAArtworkManager.h in Headers */,
 				52311EFC1978507F00AB477F /* NSImage+MNTImageExtensions.h in Headers */,
+				52311EF319782FDB00AB477F /* OAArtworkImage.h in Headers */,
 				52311EEF197789C700AB477F /* OAAudioImporter.h in Headers */,
 				52ABB74518A5BAC90044DBD7 /* OAAudioPlayer.h in Headers */,
+				52C6EB78198AC91B003E3D38 /* OAAudioObjectDelegate.h in Headers */,
 				52ABB76D18A6BA1E0044DBD7 /* OAUtilities.h in Headers */,
 				52ABB76418A5D6250044DBD7 /* OAAudioObject.h in Headers */,
 			);
@@ -480,7 +484,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -504,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;

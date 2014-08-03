@@ -18,5 +18,8 @@
 
 +(OAArtworkManager *)sharedArtworkManager;
 -(void)findOrCreateCoverArtworkForObject:(OAAudioObject *)audioObject imageData:(NSData *)artworkData;
+-(void)findCoverArtworkForObject:(OAAudioObject *)audioObject;
+-(void)loadArtCollectionFromDirectory:(NSString *)filePath;
+-(void)writeArtCollectionToDirectory:(NSString *)filePath;
 
 @end

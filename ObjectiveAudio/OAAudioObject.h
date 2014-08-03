@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "OAArtworkImage.h"
+#import "OAAudioObjectDelegate.h"
 
 @interface OAAudioObject : NSObject
 
@@ -21,11 +22,13 @@
 @property (nonatomic) NSInteger trackLength;
 @property (nonatomic) NSError *readError;
 
+@property id<OAAudioObjectDelegate> delegate;
+
 @property BOOL isInitialized;
 @property BOOL reading;
 @property BOOL playingNow;
 @property BOOL unreadable;
 
-- (id)initWithURL:(NSURL *)url;
+- (instancetype)initWithURL:(NSURL *)url;
 
 @end
